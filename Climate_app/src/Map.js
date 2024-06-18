@@ -203,7 +203,7 @@ function MapWithHoverAndClickHandler() {
             <div className='p-4  relative items-center sm:w-full md:w-[50%] h-fit rounded shadow-lg shadow-red-700'>
                 <MapContainer center={[22.5937, 82.9629]} zoom={4} style={{ height: '500px', width: '100%' }}>
                     <TileLayer
-                        url="https://tiles.stadiamaps.com/tiles/alidade_satellite/{z}/{x}/{y}{r}.jpg"
+                        url="https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png"
                     />
                     {indiaGeoJSON && <GeoJSON data={indiaGeoJSON} onEachFeature={onEachFeature} style={style}  />}
                     <MapClickHandler />
