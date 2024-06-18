@@ -71,7 +71,7 @@ function MapWithHoverAndClickHandler() {
         const { lat, lng } = event.latlng;
 
         try {
-            const response = await fetch(`http://localhost:3001/api/data?lat=${lat}&lng=${lng}`);
+            const response = await fetch(`https://nrsc-server.onrender.com/api/data?lat=${lat}&lng=${lng}`);
             const data = await response.json();
             setClickedLatLng({ lat, lon: lng });
             setFetchedData(data);
@@ -111,7 +111,7 @@ function MapWithHoverAndClickHandler() {
 
         try {
             setError('wait you data is fetching')
-            const response = await fetch('http://localhost:3001/api/state-dat', {
+            const response = await fetch('https://nrsc-server.onrender.com/api/state-dat', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
