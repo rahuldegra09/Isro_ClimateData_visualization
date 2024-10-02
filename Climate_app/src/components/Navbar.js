@@ -14,7 +14,7 @@ const Navbar = () => {
               <h1>Government of India.</h1>
             </div>
         <div className=' flex justify-center '>
-                  <img src="ss.jpg" alt="Start Logo" width={50} height={50} />
+                 
             </div>
 
         </div>
