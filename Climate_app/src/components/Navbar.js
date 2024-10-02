@@ -5,7 +5,7 @@ const Navbar = () => {
       <nav className="p-1 bg-white ">
       <div className='grid grid-cols-3 gap-2 '>
         <div className='justify-center flex '>
-                <img src="isro.png" alt="Start Logo" width={80} height={80}  />
+               
             </div>
 
             <div className='flex flex-col items-center justify-center text-black text-[10px] md:text-2xl '>
